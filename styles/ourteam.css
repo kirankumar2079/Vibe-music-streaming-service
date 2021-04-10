@@ -1,0 +1,65 @@
+.introaboutus
+{
+    height: 50vh;
+    margin: 10px 20px;
+    padding:1vw;
+  
+    background: rgba(146,142,142,00);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    border:1px solid rgba(255,255,255,0.2);
+}
+
+.about
+{
+    display: flex;
+}
+
+
+.about #praveen,#prateek,#Tarun,#vikas,#kiran
+{
+
+    float: left;
+    height: 25vh;
+    width : 15vw;
+    margin: 10px 20px;
+    padding:1vw;
+  
+    background: rgba(146,142,142,0.3);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    border:1px solid rgba(255,255,255,0.2);
+}
+/* .about #prateek
+{
+    position :relative;
+    left: 18vw;
+    bottom:31vh;
+}
+.about #Tarun
+{
+    position :relative;
+}
+.about #vikas
+{
+    position :relative;
+}
+.about #kiran
+{
+    position :relative;
+}
+*/
+.about img
+{
+    display : inline-block;
+    height:20vh;
+    width : 10vw;
+}
+h1
+{
+    display: inline;
+}
