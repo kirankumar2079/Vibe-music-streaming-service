@@ -1,22 +1,57 @@
+
+body{
+    font-family: 'Quicksand', sans-serif;
+
+}
 .introaboutus
 {
     height: 50vh;
-    margin: 10px 20px;
+    margin: 1rem 1.5rem;
     padding:1vw;
-  
+    display: flex;
+ 
+}
+
+
+.introaboutus .img1 img
+{
+    margin: 1rem ;
+    flex:1;
+    align-content: center;
+    justify-content: center;
+    height:38vh;
+}
+
+.introaboutus #matter1
+{
+    flex:4;
+    height: 50vh;
+
+
+    text-align:center;
     background: rgba(146,142,142,00);
     box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 10px;
     border:1px solid rgba(255,255,255,0.2);
-}
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .about
 {
     display: flex;
 }
-
+.introaboutus #matter1 #realmatter
+{
+    width: 70%;
+}
+.about .member
+{
+    text-align: center;
+}
 
 .about #praveen,#prateek,#Tarun,#vikas,#kiran
 {
@@ -27,32 +62,14 @@
     margin: 10px 20px;
     padding:1vw;
   
-    background: rgba(146,142,142,0.3);
+    background: rgba(146,142,142,0.1);
     box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 10px;
     border:1px solid rgba(255,255,255,0.2);
 }
-/* .about #prateek
-{
-    position :relative;
-    left: 18vw;
-    bottom:31vh;
-}
-.about #Tarun
-{
-    position :relative;
-}
-.about #vikas
-{
-    position :relative;
-}
-.about #kiran
-{
-    position :relative;
-}
-*/
+
 .about img
 {
     display : inline-block;
@@ -62,4 +79,25 @@
 h1
 {
     display: inline;
+}
+
+@media screen and (max-width: 850px) 
+{
+    .about
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .about .member
+    {
+        min-width: 50%;
+        min-height:45%;
+    }
+    .introaboutus img
+    {
+      display:none;
+    }
 }

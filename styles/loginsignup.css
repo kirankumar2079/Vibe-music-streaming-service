@@ -1,0 +1,238 @@
+:root
+{
+    --plightglasscolor : rgba(228, 209, 209, 0.1);
+    --plightimg : url("../images/back1.jpg");
+
+    --ptextbackcolor : rgba(0, 0, 0, 0.8);
+
+    --pahovercolor: rgba(255,255,255,0.95);
+    --pahoverbgcolor: rgba(2, 2, 2, 0.5);
+
+    /* --plightglasscolor : rgba(10,10,10,0.1);
+    --plightimg : url("../images/back.jpg");
+
+    --ptextbackcolor : rgba(255, 255, 255, 0.8);
+
+    --pahovercolor: rgba(2,2,2,0.95);
+    --pahoverbgcolor: rgba(255, 255, 255, 0.5);  */
+
+}  
+body
+{
+    font-family: 'Quicksand', sans-serif;
+    margin:0;
+    padding:0;
+    background-image: var(--plightimg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+}
+#loginsignup
+{
+    position: relative;
+    height: 100vh;
+    background: rgba(240, 240, 240, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    margin: 10px 20px;
+    border-radius: 10px;
+    border:1px solid rgba(255,255,255,0.2);
+}
+
+#handshake #symbol
+{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    width: 9vh;
+    height: 9vh;
+    background:#e9e8e8;
+    background: #e9e8e8;
+    box-shadow:  6px 6px 12px #c1c1c1,
+                 -6px -6px 12px #ffffff;
+    border-radius: 50%;
+    padding-top:1.5rem;
+    padding-right: 2rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+}
+
+#login
+{
+    background-color: #e9e8e8;
+    width: 40vw;
+    height: 60vh;
+    text-align: center;
+    position:absolute;
+    top: 20%;
+    left: 5%;
+    border-radius: 1em;
+    transition: 2s;
+   
+    
+    
+}
+
+#handshake
+{
+    background-color: #e9e8e8;
+    width: 40vw;
+    height: 60vh;
+    text-align: center;
+    position:absolute;
+    top: 20%;
+    left: 5%;
+    border-radius: 1em; 
+    transition: 2s;
+}
+
+#handshake  {
+    display: flex;
+    z-index: 1;
+}
+#handshake #welcome_user,#handshake #hi_user,#sign{
+    position: absolute;
+    /* border: 2px solid black; */
+}
+#handshake #welcome_user{
+    left: 35%;
+    top: 30%;
+}
+#handshake #hi_user{
+    left: 37%;
+    top: 45%;
+}
+#sign{
+
+    top: 70%;
+    left: 37%;
+
+    height: 5vh;
+    width: 10vw;
+    margin:0.5em;
+    color:black;
+    border-radius: 5px;
+    text-align: center;
+    font-size:large;
+    border: none;
+    box-shadow:  7px 7px 10px #cbcaca,
+                 -7px -7px 10px #ffffff;
+}
+#sign:active{
+    box-shadow: inset 4px 4px 12px #c1c1c1,
+    inset -4px -4px 12px #ffffff;
+}
+
+#signup{
+    background-color:#e9e8e8;
+    width: 40vw;
+    height: 60vh;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border-radius: 1em;
+
+    
+   
+    transition : 2s;
+}
+#login input
+{
+    background:#e9e8e8;
+    height: 5vh;
+    width: 20vw;
+    margin:0.5em;
+    color:black;
+    border-radius: 5px;
+    text-align: center;
+    font-size:large;
+    border: none;
+   
+   
+    box-shadow: inset 5px 5px 10px #c6c5c5,
+                inset -5px -5px 10px #ffffff;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+#signup input
+{
+    background:#e9e8e8;
+    height: 5vh;
+    width: 20vw;
+    margin:0.5em;
+    color:black;
+    border-radius: 5px;
+    text-align: center;
+    font-size:large;
+    border: none;
+   
+   
+    box-shadow: inset 5px 5px 10px #c6c5c5,
+                inset -5px -5px 10px #ffffff;
+}
+#loginsignup input[type=submit]
+{
+
+    width: 10vw;
+    background-color:#e9e8e8;
+    color: black;
+    cursor: pointer;
+
+    box-shadow:  7px 7px 10px #cbcaca,
+                 -7px -7px 10px #ffffff;
+                 
+    
+}
+
+#loginsignup input[type=submit]:active
+{
+
+box-shadow: inset 4px 4px 12px #c1c1c1,
+            inset -4px -4px 12px #ffffff;
+}
+#guest
+{
+    position: absolute;
+    top: 85%;
+    left: 45%;
+  
+    height: 5vh;
+    width: 10vw;
+    margin:0.5em;
+    color:black;
+    border-radius: 5px;
+    text-align: center;
+    font-size:large;
+    border: none;
+   
+   
+}
+
+#loginsignup a:hover{
+    background:none;
+
+
+}
+
+#guest:active
+{
+    
+box-shadow: inset 4px 4px 12px #c1c1c1,
+inset -4px -4px 12px #ffffff;
+}
+
+@media screen and (max-width: 850px)
+{
+    #loginsignup
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}

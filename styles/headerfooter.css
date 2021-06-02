@@ -1,0 +1,253 @@
+
+:root
+{
+    --plightglasscolor : rgba(228, 209, 209, 0.1);
+    --plightimg : url("../images/back1.jpg");
+
+    --ptextbackcolor : rgba(0, 0, 0, 0.9);
+
+    --pahovercolor: rgba(255,255,255,0.95);
+    --pahoverbgcolor: rgba(2, 2, 2, 0.5);
+
+    /* --plightglasscolor : rgba(10,10,10,0.1);
+    --plightimg : url("../images/back.jpg");
+
+    --ptextbackcolor : rgba(255, 255, 255, 0.8);
+
+    --pahovercolor: rgba(2,2,2,0.95);
+    --pahoverbgcolor: rgba(255, 255, 255, 0.5);  */
+
+}                                  
+
+.dark-theme
+{
+    --plightglasscolor : rgba(10,10,10,0.1);
+    --plightimg : url("../images/back.jpg");
+
+    --ptextbackcolor : rgba(255, 255, 255, 0.8);
+
+    --pahovercolor: rgba(2,2,2,0.95);
+    --pahoverbgcolor: rgba(255, 255, 255, 0.5); 
+}
+
+
+body
+{
+    font-family: 'Quicksand', sans-serif;
+    margin:0;
+    padding:0;
+    background-image: var(--plightimg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+ 
+}
+
+ 
+
+#header1
+{
+    height: 5vh;
+    margin: 10px 20px;
+    padding:1vw;
+  
+    background: var(--plightglasscolor);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    border:1px solid rgba(255,255,255,0.2);
+}
+#header1 img
+{ 
+    position:relative;
+    height :2.5vh;
+ 
+    
+}
+
+.icon
+{
+    cursor: pointer;
+}
+
+#header1 #last-but
+{
+  float : right;
+}
+
+
+#header1 ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    
+}
+a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 9px;
+    color: black;
+    margin: 30px 20px  auto 20px;
+    font-weight: bold;
+    border-radius: 25px; 
+    
+}
+
+
+a:hover
+{
+  color:var(--pahovercolor);
+  background-color: var(--pahoverbgcolor);
+  transition-duration: 0.2s;
+  font-weight:bold;
+}
+li{
+    display: inline;
+}
+
+
+
+
+#footer{
+    display: flex;
+    height: 20vh;
+    margin: 10px 20px;
+    background: var(--plightglasscolor);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    border:1px solid rgba(255,255,255,0.2);
+}
+
+#footer ul
+{
+    flex: 1;
+    padding: 10px;
+}
+
+#footer .p 
+{
+    flex: 1;
+    text-align: center;
+}
+
+#footer .h4
+{
+    color: var(--pahoverbgcolor);
+    text-align: center;
+    flex:1;
+}
+
+#social
+{
+
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+
+    margin: 10px 20px;
+    background: var(--plightglasscolor);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    border:1px solid rgba(255,255,255,0.2);
+    
+}
+
+#social img 
+{
+    width:50px;
+    height:50px;
+}
+
+
+.logo-for
+{
+    padding:0.5rem;
+    margin-bottom: -2vh;
+}
+
+
+@media screen and (max-width:850px) {
+
+    a{
+        font-size: 1rem;
+        text-decoration: none;
+        padding: 0.5em;
+        color: black;
+        margin: 30px 20px  auto 20px;
+        font-weight: bold;
+        border-radius: 25px; 
+        
+    }
+    
+    
+    a:hover
+    {
+      color:var(--pahovercolor);
+      background-color: var(--pahoverbgcolor);
+      transition-duration: 0.2s;
+      font-weight:bold;
+    }
+
+    #header1
+    {
+        color:black;
+        font-size:0.2rem;
+    
+        height:8vh;
+        margin: 0.5rem;
+        display:flex;
+        padding:0;
+        align-items:center;
+        justify-content: space-between;
+    }
+
+    
+    #header1 img
+    { 
+        display: none;
+    }
+    #header1 #last-but
+    {
+    float : right;
+    }
+
+
+    #footer{
+        display: flex;
+        height: 10vh;
+        margin: 0.5rem;
+        background: var(--plightglasscolor);
+        box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border-radius: 10px;
+        border:1px solid rgba(255,255,255,0.2);
+    }
+    
+    #footer ul
+    {
+        flex: 1;
+        padding: 10px;
+    }
+    
+    #footer .p 
+    {
+        display: none;
+    }
+    
+    #footer .h4
+    {
+       display:none;
+    }
+    
+    #social
+    {
+        display: none;
+    }
+}
